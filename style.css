@@ -5,21 +5,35 @@
 *{
 text-align: center;
 margin:0;
-padding:0
+padding:0;
 
 }
 
 h1{
-   background-color: black;
-   color: white;
+   background-color:rgb(240, 240, 67);
+   font-size: 6vw;
+   text-align: center;
+   border: 50px;
+   color: black;
    height: 5rem;
    line-height: 5rem;
+   font-style:normal;
+   padding: 0px 0px;
+   display: block;
+   text-shadow: 2px 2px 5px gray;
+   font-family: 'Comic Neue', cursive;
+ 
+  
+  
+ 
+
 
 }
 
 .choice{
    height: 165px;
    width: 165px;
+ 
 } 
 
 img{
@@ -27,6 +41,7 @@ img{
    width: 150px;
    object-fit: cover;
    border-radius: 50%;
+   margin-top: 20px;
 
 }
 
@@ -34,8 +49,9 @@ img{
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 3rem;
-   margin: top 5rem; ;
+   gap: 15px;
+   margin: top 5rem;
+   flex-wrap: wrap;
  }
 
 .choice:hover{
@@ -57,7 +73,8 @@ img{
    align-items: center; 
    font-size: 2rem;
    margin: 3rem;
-   gap: 5rem;
+   gap: 40px;
+   flex-wrap: wrap;
 
 }
 
@@ -69,8 +86,24 @@ img{
 #message {
    background-color: black;
    color: white;
-   display:inline;
+   display:inline-block;
    font-size:2rem;
-   padding:1rem;
+   padding:10px 15px;
    border-radius:1rem ;
+}
+img{
+   width: 100%;
+   max-width: 120px;
+   height: auto;
+}
+@media (max-width:600px){
+   img{
+      max-width: 90px;
+   }
+   h1{
+      font-size: 20px;
+   }
+   .choices{
+      gap:10px;
+   }
 }
