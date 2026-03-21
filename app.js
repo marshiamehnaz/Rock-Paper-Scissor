@@ -32,7 +32,7 @@ const showWinner =(userWin)=>{
 }
 else{
   console.log("You lose");
-  message.innerText="You lose";
+  message.innerText="You lost";
   message.style.backgroundColor ="red";
   CompScore++;
   compScorePara.innerText= CompScore;
